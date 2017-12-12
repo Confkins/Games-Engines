@@ -44,6 +44,7 @@
     <IncludePath>..\Dependencies\LeapSDK\include;..\Dependencies\FMOD\inc;..\Dependencies\LibOVR\Include;..\Dependencies\SDL2-2.0.3\include;..\Dependencies\glew-1.10.0\include;..\Dependencies\glm-0.9.4.3\glm;..\Dependencies\SDL_ttf;..\Dependencies\bullet3\src;..\Dependencies\Kinect\v2.0\inc;..\Dependencies\Speech\v11.0\Include;$(IncludePath)</IncludePath>
     <LibraryPath>..\Dependencies\LeapSDK\lib\x86;..\Dependencies\Speech\v11.0\Include;..\Dependencies\FMOD\lib;..\Dependencies\LibOVR\Lib\Win32\VS2013;..\Dependencies\SDL2-2.0.3\lib\x86;..\Dependencies\SDL_ttf\VisualC\Win32\Release;..\Dependencies\glew-1.10.0\lib\Release\Win32;..\Dependencies\bullet3\lib;..\Dependencies\Kinect\v2.0\Lib\x86;$(LibraryPath)</LibraryPath>
     <ExecutablePath>$(ExecutablePath)</ExecutablePath>
+    <ReferencePath>$(VC_ReferencesPath_x86);$(ProjectDir);$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSDK_IncludePath);‌</ReferencePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -99,14 +100,15 @@
     </CustomBuildStep>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Assignment.cpp" />
     <ClCompile Include="AttackingState.cpp" />
     <ClCompile Include="Buddha.cpp" />
     <ClCompile Include="Capsule.cpp" />
     <ClCompile Include="FlockingScenario.cpp" />
     <ClCompile Include="FountainEffect.cpp" />
+    <ClCompile Include="GravityController.cpp" />
     <ClCompile Include="IdleState.cpp" />
     <ClCompile Include="KinectAudioStream.cpp" />
-    <ClCompile Include="Lab3.cpp" />
     <ClCompile Include="LazerBeam.cpp" />
     <ClCompile Include="LeapHands.cpp" />
     <ClCompile Include="ObstacleAvoidanceScenario.cpp" />
@@ -158,13 +160,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AttackingState.h" />
+    <ClInclude Include="btUniversalConstraint.h" />
     <ClInclude Include="Buddha.h" />
     <ClInclude Include="Capsule.h" />
     <ClInclude Include="FlockingScenario.h" />
     <ClInclude Include="FountainEffect.h" />
+    <ClInclude Include="GravityController.h" />
     <ClInclude Include="IdleState.h" />
     <ClInclude Include="KinectAudioStream.h" />
-    <ClInclude Include="Lab3.h" />
     <ClInclude Include="LazerBeam.h" />
     <ClInclude Include="LeapHands.h" />
     <ClInclude Include="ObstacleAvoidanceScenario.h" />

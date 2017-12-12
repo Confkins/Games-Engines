@@ -23,15 +23,6 @@
     <Filter Include="States">
       <UniqueIdentifier>{e477bb02-ac64-447a-a4c0-9a1da63c6cf1}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Particles">
-      <UniqueIdentifier>{61bc13fa-b49b-4bf6-8dce-6afe521f52a7}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Labs">
-      <UniqueIdentifier>{f09f20fd-b65f-4670-9e98-ec489fae4c53}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Kinect2">
-      <UniqueIdentifier>{be702c50-cf5b-403e-bbc9-c798d56d7530}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Leap">
       <UniqueIdentifier>{46d611a0-6b45-40d8-a7de-7391c26a9a50}</UniqueIdentifier>
     </Filter>
@@ -41,6 +32,12 @@
     </Filter>
     <Filter Include="Prefabs">
       <UniqueIdentifier>{697651d2-0cd7-45c2-b4a6-56fe6f15526c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Games\Kinect2">
+      <UniqueIdentifier>{be702c50-cf5b-403e-bbc9-c798d56d7530}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="States\Particles">
+      <UniqueIdentifier>{61bc13fa-b49b-4bf6-8dce-6afe521f52a7}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -162,16 +159,16 @@
       <Filter>Games</Filter>
     </ClCompile>
     <ClCompile Include="FountainEffect.cpp">
-      <Filter>Particles</Filter>
+      <Filter>States\Particles</Filter>
     </ClCompile>
     <ClCompile Include="Particle.cpp">
-      <Filter>Particles</Filter>
+      <Filter>States\Particles</Filter>
     </ClCompile>
     <ClCompile Include="ParticleEffect.cpp">
-      <Filter>Particles</Filter>
+      <Filter>States\Particles</Filter>
     </ClCompile>
     <ClCompile Include="SnowEffect.cpp">
-      <Filter>Particles</Filter>
+      <Filter>States\Particles</Filter>
     </ClCompile>
     <ClCompile Include="Buddha.cpp">
       <Filter>Games</Filter>
@@ -186,7 +183,7 @@
       <Filter>Games</Filter>
     </ClCompile>
     <ClCompile Include="Person2.cpp">
-      <Filter>Kinect2</Filter>
+      <Filter>Games\Kinect2</Filter>
     </ClCompile>
     <ClCompile Include="LeapHands.cpp">
       <Filter>Leap</Filter>
@@ -204,13 +201,16 @@
       <Filter>Prefabs</Filter>
     </ClCompile>
     <ClCompile Include="KinectAudioStream.cpp">
-      <Filter>Kinect2</Filter>
+      <Filter>Games\Kinect2</Filter>
     </ClCompile>
     <ClCompile Include="Capsule.cpp">
       <Filter>Prefabs</Filter>
     </ClCompile>
-    <ClCompile Include="Lab3.cpp">
-      <Filter>Labs</Filter>
+    <ClCompile Include="Assignment.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="GravityController.cpp">
+      <Filter>Engine</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -332,16 +332,16 @@
       <Filter>Games</Filter>
     </ClInclude>
     <ClInclude Include="FountainEffect.h">
-      <Filter>Particles</Filter>
+      <Filter>States\Particles</Filter>
     </ClInclude>
     <ClInclude Include="Particle.h">
-      <Filter>Particles</Filter>
+      <Filter>States\Particles</Filter>
     </ClInclude>
     <ClInclude Include="ParticleEffect.h">
-      <Filter>Particles</Filter>
+      <Filter>States\Particles</Filter>
     </ClInclude>
     <ClInclude Include="SnowEffect.h">
-      <Filter>Particles</Filter>
+      <Filter>States\Particles</Filter>
     </ClInclude>
     <ClInclude Include="Buddha.h">
       <Filter>Games</Filter>
@@ -353,7 +353,7 @@
       <Filter>Games</Filter>
     </ClInclude>
     <ClInclude Include="Person2.h">
-      <Filter>Kinect2</Filter>
+      <Filter>Games\Kinect2</Filter>
     </ClInclude>
     <ClInclude Include="LeapHands.h">
       <Filter>Leap</Filter>
@@ -371,14 +371,13 @@
       <Filter>Engine</Filter>
     </ClInclude>
     <ClInclude Include="KinectAudioStream.h">
-      <Filter>Kinect2</Filter>
+      <Filter>Games\Kinect2</Filter>
     </ClInclude>
     <ClInclude Include="Capsule.h">
       <Filter>Prefabs</Filter>
     </ClInclude>
-    <ClInclude Include="Lab3.h">
-      <Filter>Labs</Filter>
-    </ClInclude>
+    <ClInclude Include="GravityController.h" />
+    <ClInclude Include="btUniversalConstraint.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Content\CubeShader.fragmentshader">
